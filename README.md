@@ -11,3 +11,10 @@ NOTE:
 - in package it/mapeto2my/java_aop/examples you'll find code that realize a simple example of usage,Main.java is the main class
 - packages other than the previously mentioned contains the core
 - the JSON config file is it/mapeto2my/java_aop/examples/aop_conf.json
+
+NOTE on Dependencies:
+-You'll need the following jars on classpath:
+	a) json-simple-1.1.1.jar (or analogous)
+-I've compiled and runned it with java7
+
+
