@@ -62,8 +62,11 @@ public class MemoryFactoryBuilder implements FactoryBuilder{
 			
 		}
 		
+		sBuffer.append("public static MemoryFactory singleInstance;");
+		
 		sBuffer.append("public static MemoryFactory getSingleInstance(){\n");
-		sBuffer.append("	return new MemoryFactory();\n");
+		sBuffer.append("if(singleInstance==null){singleInstance = new MemoryFactory();}");
+		sBuffer.append("return singleInstance;\n");
 		sBuffer.append("}\n\n");
 		
 		sBuffer.append("private MemoryFactory() {\n\n");
