@@ -3,7 +3,7 @@ aop
 
 If you are reading this file  maybe you are searching for information about the code included in this repo:
 the code represents the core of a prototypal, funny* AOP engine that realize a mechanism similar to the 
-method-proxy mechanism realized by SpringFramework; the proxy behaviour is configurable via a text file 
+method-proxy mechanism realized by SpringFramework; this behaviour is realized by a runtime generation of a proxy class and without using java.lang.reflect.Proxy ; the proxy behaviour is configurable via a text file 
 containing a JSON object (with key "targets") ; i've made it exclusively for purposes of knowledge.
 I'd like you enjoy it .... have fun !!!
 
